@@ -1,5 +1,5 @@
 - name: configuring mongodb server
-  become: yes
+  become: yes #sudo access
   hosts: mongodb
   tasks:
   - name: copy mongodb repo
