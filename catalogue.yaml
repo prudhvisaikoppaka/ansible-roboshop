@@ -5,7 +5,7 @@
   - name: disable default nodejs
     ansible.builtin.command: dnf module disable nodejs -y
 
-  - name: enable nodejs:20
+  - name: Enable service nodejs:20
     ansible.builtin.service:
       name: nodejs:20
       enabled: yes
