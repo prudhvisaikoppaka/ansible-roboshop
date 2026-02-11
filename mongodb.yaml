@@ -18,9 +18,9 @@
       state: started
       enabled: yes
 
-  # - name: allow more connections
-  #   ansible.builtin.replace:
-  #     path: /etc/mongodb.conf 
-  #     regexp: '127.0.0.1'
-  #     replace: '0.0.0.0'
+  - name: allow more connections
+    ansible.builtin.replace:
+      path: /etc/mongodb.conf 
+      regexp: '127.0.0.1'
+      replace: '0.0.0.0'
       
