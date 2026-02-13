@@ -1,0 +1,5 @@
+- name:  Install user components
+  become: yes
+  hosts: user
+  tasks:
+  - name: 
