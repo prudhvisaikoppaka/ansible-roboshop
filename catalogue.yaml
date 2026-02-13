@@ -13,7 +13,6 @@
       name: nodejs
       state: present
 
-
   - name: create app directory
     ansible.builtin.file:
       path: /app
