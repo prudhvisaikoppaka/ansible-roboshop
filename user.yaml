@@ -1,4 +1,4 @@
-- name:  Install user components
+- name:  Configure user component
   become: yes
   hosts: user
   tasks:
