@@ -2,4 +2,15 @@
   become: yes
   hosts: user
   tasks:
-  - name: 
+  - name: disable default nodejs
+    ansible.debuilt.command: dnf module disable nodejs -y
+
+  - name: enable service nodejs:20
+    ansible.debuilt.command: dnf module enable nodejs:20 -y
+
+  - name: Install nodejs
+    ansible.debuilt.dnf:
+      name: nodejs
+      state: present
+
+  
