@@ -55,6 +55,11 @@
       state: started
       enabled: yes
 
+  - name: install mysql client
+    ansible.builtin.dnf:
+      name: mysql
+      state: installed
+
   - name: connect to mysql using app user
     community.mysql.mysql_info:
       login_user: shipping
