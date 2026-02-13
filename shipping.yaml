@@ -21,8 +21,8 @@
 
   - name: download shiping code
     ansible.builtin.get_url:
-    url: https://roboshop-artifacts.s3.amazonaws.com/shipping-v3.zip
-    dest: /tmp/shipping.zip
+      url: https://roboshop-artifacts.s3.amazonaws.com/shipping-v3.zip
+      dest: /tmp/shipping.zip
 
   - name: unzip shipping code
     ansible.builtin.unarchive:
