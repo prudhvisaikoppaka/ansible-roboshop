@@ -66,12 +66,12 @@
       state: started
       enabled: yes
 
-  - name: connect to mysql using app user
-    community.mysql.mysql_info:
-      login_user: shipping
-      login_password: RoboShop@1
-      login_host: 172.31.25.113
-      login_db: cities
+  # - name: connect to mysql using app user
+  #   community.mysql.mysql_info:
+  #     login_user: shipping
+  #     login_password: RoboShop@1
+  #     login_host: 172.31.25.113
+  #     login_db: cities
 
   - name: import data
     tags:
