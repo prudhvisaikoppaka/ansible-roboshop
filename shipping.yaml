@@ -70,7 +70,7 @@
     community.mysql.mysql_info:
       login_user: shipping
       login_password: RoboShop@1
-      login_host: mysql.prudhvisai.space
+      login_host: 172.31.25.113
       login_db: cities
 
   - name: import data
