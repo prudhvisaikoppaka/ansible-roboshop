@@ -80,7 +80,7 @@
       name: all
       login_user: root
       login_password: RoboShop@1
-      login_host: 172.31.25.113
+      login_host: 172.31.25.113 
       state: import
       target: "{{ item }}"
     loop:
@@ -89,6 +89,8 @@
     - /app/db/master-data.sql
 
   - name: restart shipping
+    tags:
+    - import
     ansible.builtin.service:
       state: restarted
       name: shipping
